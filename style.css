@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+.p-1 span{
+    background-color: pink;
+}
+.p-2 span{
+    background-color: red;
+}
+.p-3 span{
+    background-color: yellow;
+}
+.p-1,.p-2,.p-3{
+    width: 90%;
+    height: 150px;
+    border: 3px solid black;
+    padding: 35px 10px 0 10px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: grey;
+}
+
+.name{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    width: 100px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 1199px) {
+ 
+ .p-1{
+    float: left;
+    width: 50%;
+ }
+ .p-2{
+    float: right;
+    width: 49%;
+ }
+ .p-3{
+    width: 100%;
+    margin: auto;
+    clear: both;
+ }
+
+}
+
+
+@media (min-width: 1200px) {
+.p-1,.p-2{
+    width: 33%;
+    float: left;
+    margin-right: 6px;
+}
+
+.p-3{
+    width: 33%;
+    float: right;
+}
+}
+
+
